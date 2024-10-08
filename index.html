@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Schule members Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Skill Schule Members Form</h1>
+    <form id="dataForm">
+        <div class="form-group">
+            <label for="fullName">Full Name:IZUABUEKE DAVIDSON ANUJULU</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:29/11/1970</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:anujuludavidson@gmail.com</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:(+234)08036888208</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:NO 5 Owerri street onitsha</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:male</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="ethnicity">Ethnicity:Igbo</label>
+            <input type="text" id="ethnicity" name="ethnicity">
+        </div>
+        <div class="form-group">
+            <label for="employer">Current Employer:Skill Schule</label>
+            <input type="text" id="employer" name="employer">
+        </div>
+        <div class="form-group">
+            <label for="jobTitle">Job Title:Associate cloud engineer</label>
+            <input type="text" id="jobTitle" name="jobTitle">
+        </div>
+        <div class="form-group">
+            <label for="experience">Years of Experience:1 year</label>
+            <input type="number" id="experience" name="experience">
+        </div>
+        <div class="form-group">
+            <label for="education">Highest Degree Earned:Secondary School</label>
+            <input type="text" id="education" name="education">
+        </div>
+        <div class="form-group">
+            <label for="fieldOfStudy">Field of Study:Engineering</label>
+            <input type="text" id="fieldOfStudy" name="fieldOfStudy">
+        </div>
+        <div class="form-group">
+            <label for="institution">Institution Name:Skill Schule</label>
+            <input type="text" id="institution" name="institution">
+        </div>
+        <div class="form-group">
+            <label for="interests">Interests/Hobbies:Coding</label>
+            <textarea id="interests" name="interests"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="skills">Skills/Certifications:</label>
+            <textarea id="skills" name="skills"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="reference">References:</label>
+            <textarea id="reference" name="reference"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="consent">Consent:</label>
+            <input type="checkbox" id="consent" name="consent" required> I consent to the collection and use of my data.
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('dataForm').onsubmit = function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+            // Here you can add code to handle the form data, e.g., send it to a server.
+        };
+    </script>
+
+</body>
+</html>
